@@ -11,6 +11,9 @@
     <meta name="keywords" content="Seongjoo Moon, Artist" />
 
     <link rel="stylesheet" href="assets/style.css">
+
+    <!-- aos css -->
+    <link rel="stylesheet" href="assets/aos.css">
 </head>
 
 <body>
@@ -19,13 +22,14 @@
     </header>
 
     <main class="home article-list">
-        <section class="grid" id="mischief">
+        <section class="grid" id="works">
             <div class="cover">
                 <a href="projects/mischief.html">
                     <div class="text">
                         <h2 class="entry-title">Mischief</h2>
                         <p class="index-summary">
-                            Performacne with toy-instruments, founded or self-made toy, Microcontroller, Sensors, Ableton Live
+                            Performacne with toy-instruments, founded or self-made toy, Microcontroller, Sensors,
+                            Ableton Live
                         </p>
                         <time class="published">2024-2025</time>
                     </div>
@@ -36,7 +40,7 @@
                 </a>
             </div>
 
-            <div class="cover" id="question">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/question.html">
                     <div class="text">
                         <h2 class="entry-title">Question</h2>
@@ -49,11 +53,11 @@
                         <div class="featured-img" style="background-image: url(assets/images/questions-2.jpg);">
                         </div>
                     </div>
-                    
+
                 </a>
             </div>
 
-            <div class="cover">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/musicdance.html">
                     <div class="text">
                         <h2 class="entry-title">Music Dance</h2>
@@ -69,7 +73,7 @@
                 </a>
             </div>
 
-            <div class="cover">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/wiemandenflussueberquert.html">
                     <div class="text">
                         <h2 class="entry-title">Wie man den Fluss überquert(how to cross the river)</h2>
@@ -79,13 +83,14 @@
                         <time class="published">2024</time>
                     </div>
                     <div class="image-center">
-                        <div class="featured-img" style="background-image: url(assets/images/wieman-1-cover-index.jpg);">
+                        <div class="featured-img"
+                            style="background-image: url(assets/images/wieman-1-cover-index.jpg);">
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="cover">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/gruenrotschwarz.html">
                     <div class="text">
                         <h2 class="entry-title">Grün Rot Schwarz(Green Red Black)</h2>
@@ -101,7 +106,7 @@
                 </a>
             </div>
 
-            <div class="cover">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/onmyhead.html">
                     <div class="text">
                         <h2 class="entry-title">On my head</h2>
@@ -117,30 +122,32 @@
                 </a>
             </div>
 
-            <div class="cover">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/thetechnique.html">
                     <div class="text">
                         <h2 class="entry-title">The Technique of Body Transformation(for the Vacuum cleaner)</h2>
                         <p class="index-summary">
-                            Abandoned vacuum cleaners, closed containers, confetti, wood, Vacuum cleaner, Text Slide show(written with GPT-3), clay / dimensions variable
+                            Abandoned vacuum cleaners, closed containers, confetti, wood, Vacuum cleaner, Text Slide
+                            show(written with GPT-3), clay / dimensions variable
                         </p>
                         <time class="published">2023</time>
                     </div>
                     <div class="image-center">
-                        <div class="featured-img" style="background-image: url(assets/images/thetechnique-cover-resize.jpeg);">
+                        <div class="featured-img"
+                            style="background-image: url(assets/images/thetechnique-cover-resize.jpeg);">
                         </div>
                     </div>
                 </a>
             </div>
 
-            <div class="cover">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/fortheexhibition.html">
                     <div class="text">
                         <h2 class="entry-title">For the Exhibition(I'm literally lying, please believe me)</h2>
                         <p class="index-summary">
                             2ch Video, arduino, Processing, Cable reel roller, plywood / 10m 42s, 50*30*260cm
                         </p>
-                        <time class="published">2021-2023</time>
+                        <time class="published">2021-2022</time>
                     </div>
                     <div class="image-center">
                         <div class="featured-img" style="background-image: url(assets/images/fortheexhibition-1.jpeg);">
@@ -149,7 +156,7 @@
                 </a>
             </div>
 
-            <div class="cover">
+            <div class="cover" data-aos="fade-up">
                 <a href="projects/somethingwentwrong.html">
                     <div class="text">
                         <h2 class="entry-title">Something went wrong</h2>
@@ -159,16 +166,25 @@
                         <time class="published">2021-2022</time>
                     </div>
                     <div class="image-center">
-                        <div class="featured-img" style="background-image: url(assets/images/somethingwentwrong-1.jpg);">
+                        <div class="featured-img"
+                            style="background-image: url(assets/images/somethingwentwrong-1.jpg);">
                         </div>
                     </div>
                 </a>
             </div>
         </section>
     </main>
+
+    <footer>
+        Copyright. Seongjoo Moon Portfolio for HfK Bremen DM Master apply.
+    </footer>
+
 </body>
 
 
-<footer>
-    Copyright. Seongjoo Moon Portfolio for HfK Bremen DM Master apply.
-</footer>
+
+<!-- for animation with scroll -->
+<script src="assets/aos.js"></script>
+<script>
+    AOS.init();
+</script>

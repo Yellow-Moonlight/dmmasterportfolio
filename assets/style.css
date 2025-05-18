@@ -31,10 +31,10 @@
   --font-medium: 1.4rem;
   --font-body: 1rem;
   --font-small: 0.7rem;
-  --max-img-width: 1040px;
-  --max-content-width: 33rem;
-  --middle-content-width : 20rem;
-  --content-width: 80%;
+  --max-img-width: 45rem;
+  --max-content-width: 45rem;
+  --middle-content-width: 20rem;
+  --content-width: 100%;
 }
 
 @media only screen and (max-width: 980px) {
@@ -75,7 +75,7 @@ h6 {
 }
 
 h1 {
-  font-size: var(--font-xlarge);
+  font-size: var(--font-medium);
   line-height: 1.0;
   text-indent: -.15rem;
 }
@@ -128,7 +128,6 @@ main {
   margin-bottom: var(--pad-large);
 }
 
-main,
 footer {
   border-top: 2px solid var(--color-primary);
 }
@@ -141,6 +140,17 @@ footer {
 
 .site-header h1 {
   text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 1.35em;
+  padding: 0.5em 0.5em 0.25em;
+  color: inherit !important;
+  text-decoration: none !important
+}
+
+.site-header {
+  text-align: center;
 }
 
 
@@ -156,7 +166,7 @@ footer {
   /* 16:9 Aspect Ratio */
 }
 
-.containervertical{
+.containervertical {
   position: relative;
   width: 50%;
   height: 50%;
@@ -276,64 +286,6 @@ nav .rss {
   width: 100px;
   background: black;
   margin: 10px;
-}
-
-#menu,
-#languages {
-  line-height: 1.5;
-}
-
-#menu .icon,
-#languages .icon {
-  width: 17px;
-  position: relative;
-}
-
-#globe .stroke {
-  fill: none;
-  stroke: var(--color-primary);
-  stroke-miterlimit: 10;
-  stroke-width: 1px;
-}
-
-#globe:hover .stroke {
-  stroke: var(--color-sub);
-}
-
-#lang-menu {
-  width: 26px;
-  height: 25px;
-  cursor: pointer;
-  display: block;
-  z-index: 200;
-  float: left;
-}
-
-#languages {
-  font-family: var(--monospace);
-  font-size: var(--font-small);
-  display: none;
-  width: 150px;
-  left: 0;
-  background: aliceblue;
-  position: absolute;
-  top: 27px;
-  right: 0;
-  z-index: 300;
-  padding: var(--pad);
-  border: 1px solid var(--color-primary);
-}
-
-#languages .active-lang {
-  font-style: italic;
-}
-
-#languages ul {
-  list-style-type: none;
-}
-
-#languages.lang-expanded {
-  display: block;
 }
 
 /*--------------
@@ -818,17 +770,6 @@ figure {
   margin-top: var(--pad-xlarge);
 }
 
-figure[data-imgstate="dither"] {
-  mix-blend-mode: multiply;
-}
-
-figure[data-imgstate="undither"] {
-  mix-blend-mode: normal;
-}
-
-figure[data-imgstate="small"] {
-  max-width : var(--middle-content-width);
-}
 
 .uncompressed {
   mix-blend-mode: multiply;
